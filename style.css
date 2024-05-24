@@ -12,13 +12,39 @@ body{
     width: 100vw;
     font-family:Arial, Helvetica, sans-serif;
 }
+#start{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.start{
+    border: none;
+    padding: 20px 50px;
+    border-radius: 220px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #022900;
+    color: #09ffeb;
+    border: solid 2px #03afff;
+}
+.start:hover{
+    animation: 3s animate infinite linear;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
 .container{
     box-shadow: 1px 1px 5px black inset;
     height: auto;
-    width: 90%;
+    width: 35%;
     border-radius: 20px;
     background-color: white;
     padding-bottom: 20px;
+    display: none;
 }
 .container h2{
     margin: 10px 0 0 10px;
@@ -32,33 +58,68 @@ body{
 .container ol li{
     color: #010124;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .container .buttons {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    margin-left: 30px;
     margin-top: 30px;
+    padding: 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.correct{
+    animation-play-state: paused;
+    background-color: #08ff15;
+    color: #000000;
+    
+}
+.incorrect{
+    animation-play-state: paused;
+    background: #ff2600;
+    color: #000000;
+    
 }
  .buttons button{
     border: none;
-    border: solid 1px black;
-    padding-bottom: 20px;
-    text-align: left;
-    padding: 10px;
-    margin-bottom: 20px;
+    width: 300px;
     border-radius: 5px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    background: transparent;
+    padding: 10px 20px;
+    border: 1px solid #611802;
+    font-size: 17px;
+    transition: .5s;
+    cursor: pointer;
+}
+ .buttons button:disabled{
+    cursor: no-drop;
+    color: black;
 }
 .buttons button:hover{
-    background-color: #00001b;
+    background-color: #0c3001;
     color: white;
 }
-#next{
+.buttons button:hover:disabled{
+    background-color: transparent;
+    color: black;
+}
+#next {
     
     width: 100%;
     margin-left: 30px;
     margin-top: 30px;
+    display: none;
+
 }
 
 #next button{
@@ -69,6 +130,7 @@ body{
     color: white;
     background-color: #00001b;
     border: solid 1px #00001b;
+    cursor: pointer;
 }
 #next button:active{
     background-color: transparent;
@@ -80,9 +142,21 @@ body{
     margin-top: 30px;
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(76, 241, 0);
     font-weight: bold;
     font-size: 20px;
-    background-color: #00001b;
+    background-color: #000000;
     justify-content: center;
+    animation: 1s animate infinite linear;
+
+}
+@media (max-width: 1280px) {
+    .container{
+        width: auto;
+
+    }
+    .buttons button{
+        margin-right: 30px;
+    }
+    
 }
