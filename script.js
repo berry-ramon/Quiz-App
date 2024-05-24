@@ -26,6 +26,200 @@ let questions = [
       { text: "Flash Drives", correct: false },
     ],
   },
+  {
+    question: "What is the capital city of France?",
+    answers: [
+      { text: "Paris", correct: true },
+      { text: "London", correct: false },
+      { text: "Rome", correct: false },
+      { text: "Berlin", correct: false },
+    ],
+  },
+  {
+    question: "Who wrote the play 'Romeo and Juliet'?",
+    answers: [
+      { text: "Charles Dickens", correct: false },
+      { text: "Mark Twain", correct: false },
+      { text: "William Shakespeare", correct: true },
+      { text: " J.K. Rowling", correct: false },
+    ],
+  },
+  {
+    question: "What is the chemical symbol for water?",
+    answers: [
+      { text: "CO₂", correct: false },
+      { text: "HO₂", correct: false },
+      { text: "NaCl", correct: false },
+      { text: "H₂O", correct: true },
+    ],
+  },
+  {
+    question: "How many continents are there on Earth?",
+    answers: [
+      { text: "Five", correct: false },
+      { text: "Seven", correct: true },
+      { text: "Six", correct: false },
+      { text: "Eight", correct: false },
+    ],
+  },
+  {
+    question: "What is the largest planet in our solar system?",
+    answers: [
+      { text: "Jupiter", correct: true },
+      { text: "Earth", correct: false },
+      { text: "Mars", correct: false },
+      { text: "Saturn", correct: false },
+    ],
+  },
+  {
+    question: "In what year did the American Civil War end?",
+    answers: [
+      { text: "1776", correct: false },
+      { text: "1865", correct: true },
+      { text: "1812", correct: false },
+      { text: "1901", correct: false },
+    ],
+  },
+  {
+    question: "What is the main ingredient in a traditional Italian pizza?",
+    answers: [
+      { text: "Alfredo Sauce", correct: false },
+      { text: "Tomato Sauce", correct: true },
+      { text: "Pesto Sauce,", correct: false },
+      { text: "Barbecue Sauce", correct: false },
+    ],
+  },
+  {
+    question: "Who was the first President of the United States?",
+    answers: [
+      { text: "Jomo Kenyatta", correct: false },
+      { text: " John Adams", correct: false },
+      { text: "George Washington", correct: true },
+      { text: "Thomas Jefferson", correct: false },
+    ],
+  },
+  {
+    question: "Which element has the atomic number 1?",
+    answers: [
+      { text: "Oxygen", correct: false },
+      { text: "Carbon", correct: false },
+      { text: "Helium", correct: false },
+      { text: "Hydrogen", correct: true },
+    ],
+  },
+  {
+    question: "What does HTML stand for?",
+    answers: [
+      { text: "HyperText Markdown Language", correct: false },
+      { text: "HyperText Markup Language", correct: true },
+      { text: "HyperTool Markup Language", correct: false },
+      { text: "HighText Markup Language", correct: false },
+    ],
+  },
+  {
+    question: "What is the purpose of the <head> tag in HTML?",
+    answers: [
+      {
+        text: "To contain meta-information about the document",
+        correct: true,
+      },
+      { text: "To display the main content", correct: false },
+      { text: "To define the footer", correct: false },
+      { text: "To link external resources", correct: false },
+    ],
+  },
+  {
+    question: "Which HTML tag is used to display an image?",
+    answers: [
+      { text: "<figure>", correct: false },
+      { text: "<picture>", correct: false },
+      { text: "<img>", correct: true },
+      { text: "<graphic>", correct: false },
+    ],
+  },
+  {
+    question:
+      "Which attribute is used to specify the URL of an image in an <img> tag?",
+    answers: [
+      { text: "url", correct: false },
+      { text: "href", correct: false },
+      { text: "link", correct: false },
+      { text: "src", correct: true },
+    ],
+  },
+  {
+    question: "What does CSS stand for?",
+    answers: [
+      { text: "Computer Style Sheets", correct: false },
+      { text: "Cascading Style Sheets", correct: true },
+      { text: "Creative Style Sheets", correct: false },
+      { text: "Colorful Style Sheets", correct: false },
+    ],
+  },
+  {
+    question: "Which property is used to change the background color in CSS?",
+    answers: [
+      { text: "background-color", correct: true },
+      { text: "bgcolor", correct: false },
+      { text: "color", correct: false },
+      { text: "background", correct: false },
+    ],
+  },
+  {
+    question: "How do you make text bold in CSS?",
+    answers: [
+      { text: "font-bold: true;", correct: false },
+      { text: "font-style: bold;", correct: false },
+      { text: "font-weight: bold;", correct: true },
+      { text: "text-weight: bold;", correct: false },
+    ],
+  },
+  {
+    question: "How do you add a comment in a CSS file?",
+    answers: [
+      { text: "# comment", correct: false },
+      { text: "<!-- comment -->", correct: false },
+      { text: "// comment", correct: false },
+      { text: "/* comment */", correct: true },
+    ],
+  },
+  {
+    question: "What is the correct syntax to declare a JavaScript variable?",
+    answers: [
+      { text: "let variableName;", correct: true },
+      { text: "dim variableName;", correct: false },
+      { text: "varibleName = var;", correct: false },
+      { text: "declare variableName;", correct: false },
+    ],
+  },
+  {
+    question: "How do you create a function in JavaScript?",
+    answers: [
+      { text: "function: myFunction() {}", correct: false },
+      { text: "func myFunction() {}", correct: false },
+      { text: "def myFunction() {}", correct: false },
+      { text: "function myFunction() {}", correct: true },
+    ],
+  },
+  {
+    question:
+      "Which built-in method is used to print messages to the console in JavaScript?",
+    answers: [
+      { text: "echo()", correct: false },
+      { text: "print()", correct: false },
+      { text: "console.log()", correct: true },
+      { text: "write()", correct: false },
+    ],
+  },
+  {
+    question: "How do you add a comment in JavaScript?",
+    answers: [
+      { text: "<!-- comment -->", correct: false },
+      { text: "// comment", correct: true },
+      { text: "/* comment */", correct: false },
+      { text: "# comment", correct: false },
+    ],
+  },
 ];
 
 let currentQuestionIndex, scores;
